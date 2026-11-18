@@ -16,7 +16,7 @@ cd ../task15-aql
 ВПИШИТЕ пароль:
 
 ```bash
-curl -s -u admin:____ -X POST \
+curl -s -u admin:"Vorop1612)" -X POST \
   -H "Content-Type: text/plain" \
   -d 'items.find({"repo": "myapp-local", "name": {"$match": "myapp*"}})' \
   http://localhost:8081/artifactory/api/search/aql
@@ -35,9 +35,9 @@ curl -s -u admin:____ -X POST \
 ВПИШИТЕ вместо `____`:
 
 ```bash
-curl -s -u admin:ВАШ_ПАРОЛЬ -X POST \
+curl -s -u admin:"Vorop1612)" -X POST \
   -H "Content-Type: text/plain" \
-  -d 'items.find({"repo": "myapp-local", "path": {"$match": "____"}})' \
+  -d 'items.find({"repo": "myapp-local", "path": {"$match": "myapp/1.0.0*"}})' \
   http://localhost:8081/artifactory/api/search/aql
 ```
 
