@@ -25,7 +25,7 @@ tar -czf myapp-1.0.1.tar.gz -C myapp .
 ВПИШИТЕ пароль:
 
 ```bash
-curl -u admin:____ -T myapp-1.0.1.tar.gz \
+curl -u admin:"Vorop1612)" -T myapp-1.0.1.tar.gz \
   http://localhost:8081/artifactory/myapp-local/myapp/1.0.1/myapp-1.0.1.tar.gz
 ```
 

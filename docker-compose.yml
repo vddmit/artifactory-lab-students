@@ -22,6 +22,7 @@ services:
       postgres:
         condition: service_healthy
     environment:
+      JF_JFCONNECT_ENABLED: "false"
       JF_SHARED_DATABASE_TYPE: postgresql
       JF_SHARED_DATABASE_DRIVER: org.postgresql.Driver
       JF_SHARED_DATABASE_URL: jdbc:postgresql://postgres:5432/artifactory

@@ -32,7 +32,7 @@ curl -s -u admin:____ \
 Тот же endpoint работает и для папок:
 
 ```bash
-curl -s -u admin:ВАШ_ПАРОЛЬ \
+curl -s -u admin:"Vorop1612)" \
   http://localhost:8081/artifactory/api/storage/myapp-local/myapp/
 ```
 
